@@ -7,4 +7,5 @@ before_install:
 script:
   - docker run leux1/docker-react npm run test -- --coverage
 
-
+ jobs:
+  fast_finish: true 
