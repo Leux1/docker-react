@@ -8,7 +8,7 @@ before_install:
   - docker build -t leux1/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run leux1/docker-react npm test -- --coverage
-  - npm stop
+  - docker run -e CI=true leux1/docker-react npm run test 
+  
 
 
